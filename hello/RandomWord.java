@@ -10,8 +10,8 @@ import edu.princeton.cs.algs4.StdRandom;
 
 public class RandomWord {
     public static void main(String[] args) {
-        String champion = StdIn.readString();  // read first word
-        int i = 1;
+        String champion = "garbage";
+        int i = 1;  // index start at one
 
         // use Knuth's method
         while (!StdIn.isEmpty()) {
