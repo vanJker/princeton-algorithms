@@ -9,12 +9,10 @@ import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.StdStats;
 
 public class PercolationStats {
-    private Percolation perc;  // experiment system
     private final int size;  // size of grid
     private final double[] x;  // x[i] be the fraction of open sites in experiment i
     private final double mean;  // mean value
     private final double stddev;  // standard deviation value
-    private static double cofactor = 1.96;  // represent 1.96 in confidence interval
 
     /** Perform independent trials on an n-by-n grid. */
     public PercolationStats(int n, int trials) {
@@ -26,8 +24,8 @@ public class PercolationStats {
         x = new double[trials];
         for (int i = 0; i < trials; i++) {
             // independent experiment by random numbers
-            perc = new Percolation(n);
-            experiment();
+            Percolation perc = new Percolation(n);
+            experiment(perc);
             x[i] = 1.0 * perc.numberOfOpenSites() / (n * n);
         }
         mean = StdStats.mean(x);
@@ -35,7 +33,7 @@ public class PercolationStats {
     }
 
     /** Independent experiment by random numbers. */
-    private void experiment() {
+    private void experiment(Percolation perc) {
         int row, col;
         while (!perc.percolates()) {
             row = StdRandom.uniform(1, size + 1);
