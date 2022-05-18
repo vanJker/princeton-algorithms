@@ -19,6 +19,8 @@ Thus, CLI use *javac* and *java* instead of *javac-algs4* and *java-algs4*.
 ### Project 1: Percolation
 
 In class *Percolation*, method *open()* should not open site repeated times.
+If you get a more larger value, check your open() method whether it open site multiply times
+and count the repeated times.
 
 
 ## Schedule

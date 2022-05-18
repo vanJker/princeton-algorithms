@@ -10,11 +10,11 @@ import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 public class Percolation {
     private boolean[] sites;  // true represent the site is open
-    private WeightedQuickUnionUF uf;  // store connected relationship
-    private WeightedQuickUnionUF ufOnlyTop;  // same as above but only contain virtual top site
-    private int topID, bottomID;  // id of virtual sites
+    private final WeightedQuickUnionUF uf;  // store connected relationship
+    private final WeightedQuickUnionUF ufOnlyTop;  // same as above but only contain virtual top site
+    private final int topID, bottomID;  // id of virtual sites
     private int count;  // number of open sites
-    private int size;  // size of given grid
+    private final int size;  // size of given grid
 
     /** Creates n-by-n grid, with all sites initially blocked. */
     public Percolation(int n) {

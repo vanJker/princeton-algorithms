@@ -10,10 +10,11 @@ import edu.princeton.cs.algs4.StdStats;
 
 public class PercolationStats {
     private Percolation perc;  // experiment system
-    private int size;  // size of grid
-    private double[] x;  // x[i] be the fraction of open sites in experiment i
-    private double mean;  // mean value
-    private double stddev; // standard deviation value
+    private final int size;  // size of grid
+    private final double[] x;  // x[i] be the fraction of open sites in experiment i
+    private final double mean;  // mean value
+    private final double stddev;  // standard deviation value
+    private static double cofactor = 1.96;  // represent 1.96 in confidence interval
 
     /** Perform independent trials on an n-by-n grid. */
     public PercolationStats(int n, int trials) {
