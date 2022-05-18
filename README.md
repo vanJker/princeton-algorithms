@@ -45,12 +45,12 @@ Every week has an assignment which requires all content of that week and previou
 |   |Symbol Table Applications |     |                   |  |
 
 
-[algs4]:https://algs4.cs.princeton.edu/   
-[part1]:https://www.coursera.org/learn/algorithms-part1   
-[part2]:https://www.coursera.org/learn/algorithms-part2   
-[hello]:https://coursera.cs.princeton.edu/algs4/assignments/hello/specification.php   
-[percolation]:https://coursera.cs.princeton.edu/algs4/assignments/percolation/specification.php   
-[queues]:https://coursera.cs.princeton.edu/algs4/assignments/queues/specification.php   
-[collinear]:https://coursera.cs.princeton.edu/algs4/assignments/collinear/specification.php   
-[8-puzzle]:https://coursera.cs.princeton.edu/algs4/assignments/8puzzle/specification.php
-[kdtree]:https://coursera.cs.princeton.edu/algs4/assignments/kdtree/specification.php
+[algs4]: https://algs4.cs.princeton.edu/   
+[part1]: https://www.coursera.org/learn/algorithms-part1   
+[part2]: https://www.coursera.org/learn/algorithms-part2   
+[hello]: https://coursera.cs.princeton.edu/algs4/assignments/hello/specification.php   
+[percolation]: https://coursera.cs.princeton.edu/algs4/assignments/percolation/specification.php   
+[queues]: https://coursera.cs.princeton.edu/algs4/assignments/queues/specification.php   
+[collinear]: https://coursera.cs.princeton.edu/algs4/assignments/collinear/specification.php   
+[8-puzzle]: https://coursera.cs.princeton.edu/algs4/assignments/8puzzle/specification.php
+[kdtree]: https://coursera.cs.princeton.edu/algs4/assignments/kdtree/specification.php
