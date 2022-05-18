@@ -4,9 +4,9 @@ Self learning of Princeton University's Algorithms course in Coursera.
 
 Instructors: Robert Sedgewick, Kevin Wayne
 
-Textbook: [Algorithms, 4th](algs4)
+Textbook: [Algorithms, 4th][algs4]
 
-Websites: [Algorithms, part I](part1), [Algorithms, part II](part2)
+Websites: [Algorithms, part I][part1], [Algorithms, part II][part2]
 
 ## Assignments
 
@@ -25,22 +25,22 @@ and count the repeated times.
 
 ## Schedule
 
-Week 1-6 is from [part I](part1), rest week is from [part II](part2).   
+Week 1-6 is from [part I][part1], rest week is from [part II][part2].   
 Every week has an assignment which requires all content of that week and previous weeks.
 
 | Week | Lecture | Textbook | Interview Questions | Assignments |
 | :--: | :-----: | :------: | :-----------------: | :---------: |
-| 1 | Course Introduction      | 1.1, 1.2 |              | [Project 0: Hello, World](hello) |
-|   | Union-Find               | 1.5 | Union-Find        | [Project 1: Percolation](percolation) |
+| 1 | Course Introduction      | 1.1, 1.2 |              | [Project 0: Hello, World][hello] |
+|   | Union-Find               | 1.5 | Union-Find        | [Project 1: Percolation][percolation] |
 |   | Analysis of Algorithms   | 1.4 | Analysis of Algorithms |  |
-| 2 | Stacks and Queues        | 1.3 | Stacks and Queues | [Project 2: Queues](queues) |
+| 2 | Stacks and Queues        | 1.3 | Stacks and Queues | [Project 2: Queues][queues] |
 |   | Elementary Sorts         | 2.1 | Elementary Sorts  |  |
-| 3 | Mergesort                | 2.2 | Mergesort         | [Project 3: Collinear](collinear) |
+| 3 | Mergesort                | 2.2 | Mergesort         | [Project 3: Collinear][collinear] |
 |   | Quicksort                | 2.3 | Quicksort         |  |
-| 4 | Priority Queues          | 2.4 | Priority Queues   | [Project 4: 8 Puzzle](8-puzzle) |
+| 4 | Priority Queues          | 2.4 | Priority Queues   | [Project 4: 8 Puzzle][8-puzzle] |
 |   | Elementary Symbol Tables | 3.1, 3.2 | Elementary Symbol Tables |  |
 | 5 | Balanced Search Trees    | 3.3 | Balanced Search Trees |  |
-|   | Geometric Applications of BSTs|  |                 | [Project 5: Kd-Trees](kdtree) |
+|   | Geometric Applications of BSTs|  |                 | [Project 5: Kd-Trees][kdtree] |
 | 6 | Hash Tables              | 3.4 | Hash Tables       |  |
 |   |Symbol Table Applications |     |                   |  |
 
