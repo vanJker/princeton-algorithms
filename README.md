@@ -11,9 +11,14 @@ Websites: [Algorithms, part I](https://www.coursera.org/learn/algorithms-part1),
 ## Assignments
 
 ### Project 0: Hello, World
-Implementations of HelloWorld.java and HelloGoodbye.java are uncessary import algs4.jar.   
-Thus, CLI use javac and java instead of javac-algs4 and java-algs4.   
+
+Implementations of class *HelloWorld* and class *HelloGoodbye* are uncessary import *algs4.jar*.   
+Thus, CLI use *javac* and *java* instead of *javac-algs4* and *java-algs4*.   
 **Note**: Knuth’s method, when reading *i*th word which *i* is start from 1, not 0.
+
+### Project 1: Percolation
+
+In class *Percolation*, method *open()* should not open site repeated times.
 
 
 ## Schedule

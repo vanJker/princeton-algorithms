@@ -36,6 +36,12 @@ public class Percolation {
         if (row <= 0 || row > size || col <= 0 || col > size) {
             throw new IllegalArgumentException("Outside range!");
         }
+
+        // if given site is open, just return
+        if (isOpen(row, col)) {
+            return;
+        }
+
         // open site (row, col)
         int id = twoDimToOneDim(row, col);  // 1d index of given site
         sites[id] = true;
@@ -50,6 +56,7 @@ public class Percolation {
         if (row <= 0 || row > size || col <= 0 || col > size) {
             throw new IllegalArgumentException("Outside range!");
         }
+
         int id = twoDimToOneDim(row, col);
         return isOpen(id);
     }
@@ -66,6 +73,8 @@ public class Percolation {
         // a open bottom site. Would this site should be full?
         int id = twoDimToOneDim(row, col);
         return ufOnlyTop.find(id) == ufOnlyTop.find(topID);  // use ufOnlyTop instead
+        // unnecessary to include isOpen()? Why?
+        // Ans. not open site is disjoint.
     }
 
     /** Returns the number of open sites. */
