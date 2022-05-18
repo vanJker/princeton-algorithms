@@ -26,7 +26,8 @@ and count the repeated times.
 ## Schedule
 
 Week 1-6 is from [part I][part1], rest week is from [part II][part2].   
-Every week has an assignment which requires all content of that week and previous weeks.
+Interview Questions are optional, you should write it if you want a job.
+Every week has an assignment which requires all content of that week and previous weeks.   
 
 | Week | Lecture | Textbook | Interview Questions | Assignments |
 | :--: | :-----: | :------: | :-----------------: | :---------: |
