@@ -1,7 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="" />
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/codeInsightSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/dictionaries/lift.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/externalDependencies.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/file.template.settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/fileTemplates/includes/File Header.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/fileTemplates/internal/AnnotationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/fileTemplates/internal/Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/fileTemplates/internal/Enum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/fileTemplates/internal/Interface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/fileTemplates/internal/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/fileTemplates/internal/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/findbugs-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/inspectionProfiles/Algorithms__Part_I.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/inspectionProfiles/Algorithms__Part_I.xml.old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/inspectionProfiles/COS_126.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/libraries/algs4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/libraries/introcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/saveactions_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.lift/algs4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.lift/checkstyle-coursera.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.lift/checkstyle-lift.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.lift/checkstyle-suppressions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.lift/introcs.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.lift/spotbugs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/.lift/stdlib.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/Algorithms, Part I.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/CREDITS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/Computer Science.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/InteractivePercolationVisualizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/PercolationVisualizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/eagle25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/eagle25.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/greeting57.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/greeting57.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/heart25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/heart25.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input1-no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input1-no.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input10-no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input10-no.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input2-no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input2-no.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input20.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input50.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input8-dups.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input8-dups.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input8-no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input8-no.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/input8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/java60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/java60.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/jerry47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/jerry47.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/princeton96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/princeton96.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/sedgewick60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/sedgewick60.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/snake101.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/snake101.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/snake13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/snake13.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/wayne98.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../percolation/wayne98.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +167,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "/home/gshine/repos/algs4/hello"
+    "last_opened_file_path": "/home/gshine/repos/algs4/percolation"
   }
 }]]></component>
   <component name="RunManager" selected="Application.HelloWorld">
