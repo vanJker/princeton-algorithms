@@ -10,17 +10,26 @@ Websites: [Algorithms, part I][part1], [Algorithms, part II][part2]
 
 ## Assignments
 
-### Project 0: Hello, World
-
+### Project 0: Hello, World    
 Implementations of class *HelloWorld* and class *HelloGoodbye* are uncessary import *algs4.jar*.   
 Thus, CLI use *javac* and *java* instead of *javac-algs4* and *java-algs4*.   
 **Note**: Knuth’s method, when reading *i*th word which *i* is start from 1, not 0.
 
-### Project 1: Percolation
-
+### Project 1: Percolation    
 In class *Percolation*, method *open()* should not open site repeated times.
 If you get a more larger value, check your open() method whether it open site multiply times
 and count the repeated times.
+
+### Project 3: Queues    
+For *RandomizedQueue.java*'s deque operation, I swap random item with tail item.     
+For client part, command below:
+```bash
+java Permutation 3 < distinct.txt
+```
+should be:
+```bash
+java-algs4 Permutation 3 < distinct.txt
+```
 
 
 ## Schedule
