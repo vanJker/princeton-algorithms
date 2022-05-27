@@ -174,6 +174,7 @@ public class Deque<Item> implements Iterable<Item> {
         }
         StdOut.print("\nhead: " + testDeque1.removeFirst());
         StdOut.println("\ttail: " + testDeque1.removeLast());
+        StdOut.println("current number: " + testDeque1.size() + "\n");
 
         StdOut.println("number: " + testDeque2.size());
         for (String item: testDeque2) {
@@ -181,5 +182,6 @@ public class Deque<Item> implements Iterable<Item> {
         }
         StdOut.print("\nhead: " + testDeque2.removeFirst());
         StdOut.println("\ttail: " + testDeque2.removeLast());
+        StdOut.println("current number: " + testDeque2.size());
     }
 }
