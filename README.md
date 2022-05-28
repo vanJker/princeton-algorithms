@@ -20,7 +20,7 @@ In class *Percolation*, method *open()* should not open site repeated times.
 If you get a more larger value, check your open() method whether it open site multiply times
 and count the repeated times.
 
-### Project 3: Queues    
+### Project 2: Queues    
 For *RandomizedQueue.java*'s deque operation, I swap random item with tail item.     
 For client part, command below:
 ```bash
