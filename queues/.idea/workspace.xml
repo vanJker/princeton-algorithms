@@ -1,7 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="" />
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/codeInsightSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/dictionaries/lift.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/externalDependencies.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/file.template.settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/fileTemplates/includes/File Header.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/fileTemplates/internal/AnnotationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/fileTemplates/internal/Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/fileTemplates/internal/Enum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/fileTemplates/internal/Interface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/fileTemplates/internal/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/fileTemplates/internal/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/findbugs-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/inspectionProfiles/Algorithms__Part_I.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/inspectionProfiles/Algorithms__Part_I.xml.old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/libraries/algs4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/saveactions_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.lift/algs4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.lift/checkstyle-coursera.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.lift/checkstyle-lift.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.lift/checkstyle-suppressions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/.lift/spotbugs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/Algorithms, Part I.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/LineSegment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/equidistant.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/grid4x4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/grid5x5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/grid6x6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/horizontal100.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/horizontal25.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/horizontal5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/horizontal50.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/horizontal75.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/inarow.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input100.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input1000.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input10000.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input150.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input20.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input200.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input200.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input2000.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input250.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input299.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input300.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input3000.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input350.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input400.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input4000.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input48.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input50.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input5000.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input56.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input56.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input6000.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input80.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input80.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input8000.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/input9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/kw1260.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/mystery10089.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/random152.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/random23.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/random38.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/random91.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/rs1423.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/rs1423.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/vertical100.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/vertical25.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/vertical5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/vertical50.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collinear/vertical75.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,11 +169,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;last_opened_file_path&quot;: &quot;/home/gshine/repos/algs4/queues&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "/home/gshine/repos/algs4/collinear"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Deque" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Deque" />
