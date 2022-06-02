@@ -11,11 +11,11 @@ import edu.princeton.cs.algs4.StdOut;
 
 import java.util.Arrays;
 
-public class BruteCollinearPoints {
-    private Queue<LineSegment> segments; // line segments
+public class FastCollinearPoints {
+    private Queue<LineSegment> segments; //  line segments
 
-    /** finds all line segments containing 4 points */
-    public BruteCollinearPoints(Point[] points) {
+    /** finds all line segments containing 4 or more points */
+    public FastCollinearPoints(Point[] points) {
         // points is null
         if (points == null) {
             throw new IllegalArgumentException();
@@ -37,27 +37,33 @@ public class BruteCollinearPoints {
         }
 
         segments = new Queue<>();
-        Arrays.sort(points); // ensure segment p->s (p and s are the smallest and largest points)
+        // Arrays.sort(points); // sort for rest sorts' stable (smaller points are smaller indices)
+        Queue<Point> ps = new Queue<>(); // copy of sorted points (since other in-place sorts)
         for (int i = 0; i < points.length; i++) {
-            for (int j = i + 1; j < points.length; j++) {
-                for (int k = j + 1; k < points.length; k++) {
-                    for (int h = k + 1; h < points.length; h++) {
-                        // if collinear, add segments (the smallest index as start)
-                        if (isCollinear(points[i], points[j], points[k], points[h])) {
-                            segments.enqueue(new LineSegment(points[i], points[h]));
-                        }
+            ps.enqueue(points[i]);
+        }
+
+        for (Point p: ps) {
+            // StdOut.println("DEBUG: " + \n" + p);
+            Arrays.sort(points); // stable for later sort (smaller points are smaller indices)
+            Arrays.sort(points, p.slopeOrder()); // sort points by slope with p
+            int lo = 1; // lower index
+            int hi = 1; // higher index
+            for (int j = 1; j < points.length - 1; j++) { // now points[0] is p itself
+                // StdOut.print("DEBUG: " + points[j] + " ");
+                if (p.slopeTo(points[j]) == p.slopeTo(points[j + 1])) {
+                    hi++;
+                }
+                // Note: when not collinear or at end of array
+                if (p.slopeTo(points[j]) != p.slopeTo(points[j + 1]) || j == points.length - 2) {
+                    if ((hi-lo+1) >= 3 && p.compareTo(points[lo]) < 0) {
+                        segments.enqueue(new LineSegment(p, points[hi]));
                     }
+                    lo = j + 1;
+                    hi = j + 1;
                 }
             }
         }
-    }
-
-    /** return true if four points are collinear, return false otherwise. */
-    private boolean isCollinear(Point p, Point q, Point r, Point s) {
-        double slopeOfPQ = p.slopeTo(q);
-        double slopeOfPR = p.slopeTo(r);
-        double slopeOfPS = p.slopeTo(s);
-        return slopeOfPQ == slopeOfPR && slopeOfPR == slopeOfPS;
     }
 
     /** the number of line segments */
@@ -88,10 +94,10 @@ public class BruteCollinearPoints {
             points[i++] = new Point(x, y);
         }
 
-        BruteCollinearPoints bcp = new BruteCollinearPoints(points);
-        StdOut.println("number of line segments: " + bcp.numberOfSegments());
+        FastCollinearPoints fcp = new FastCollinearPoints(points);
+        StdOut.println("number of line segments: " + fcp.numberOfSegments());
         StdOut.println("collinear line segments: ");
-        LineSegment[] ls = bcp.segments();
+        LineSegment[] ls = fcp.segments();
         for (int j = 0; j < ls.length; j++) {
             StdOut.println(ls[j]);
         }

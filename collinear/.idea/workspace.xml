@@ -2,106 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeInsightSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/lift.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/externalDependencies.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/file.template.settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/fileTemplates/includes/File Header.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/fileTemplates/internal/AnnotationType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/fileTemplates/internal/Class.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/fileTemplates/internal/Enum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/fileTemplates/internal/Interface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/fileTemplates/internal/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/fileTemplates/internal/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/findbugs-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Algorithms__Part_I.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Algorithms__Part_I.xml.old" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/algs4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.lift/algs4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.lift/checkstyle-coursera.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.lift/checkstyle-lift.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.lift/checkstyle-suppressions.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.lift/spotbugs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithms, Part I.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BruteCollinearPoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LineSegment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equidistant.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grid4x4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grid5x5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grid6x6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/horizontal100.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/horizontal25.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/horizontal5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/horizontal50.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/horizontal75.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inarow.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input100.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input1000.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input10000.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input150.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input20.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input20.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input200.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input200.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input2000.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input250.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input299.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input300.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input3000.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input350.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input40.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input40.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input400.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input4000.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input48.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input50.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input5000.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input56.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input56.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input6000.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input80.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input80.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input8000.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kw1260.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mystery10089.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random152.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random23.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random38.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random91.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rs1423.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rs1423.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertical100.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertical25.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertical5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertical50.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertical75.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../queues/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../queues/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastCollinearPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BruteCollinearPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/BruteCollinearPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/Point.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,12 +76,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "last_opened_file_path": "/home/gshine/repos/algs4/collinear"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;/home/gshine/repos/algs4/collinear&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.FastCollinearPoints">
+    <configuration name="FastCollinearPoints" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FastCollinearPoints" />
+      <module name="Algorithms, Part I" />
+      <option name="PROGRAM_PARAMETERS" value="&lt; input8.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Point" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Point" />
       <module name="Algorithms, Part I" />

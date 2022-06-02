@@ -8,7 +8,7 @@
  *
  ******************************************************************************/
 
-import edu.princeton.cs.algs4.LinkedQueue;
+import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
@@ -111,7 +111,7 @@ public class Point implements Comparable<Point> {
     }
 
 
-    /** Cannit use static there since invoking points are different. */
+    /** Can not use static there since invoking points are different. */
     private class BySlope implements Comparator<Point> {
         private Point invoking; // invoking point
 
@@ -120,14 +120,16 @@ public class Point implements Comparable<Point> {
         }
 
         public int compare(Point p, Point q) {
-            return (int) (invoking.slopeTo(p) - invoking.slopeTo(q));
+            if (invoking.slopeTo(p) < invoking.slopeTo(q)) { return -1; }
+            if (invoking.slopeTo(p) > invoking.slopeTo(q)) { return 1; }
+            return 0;
         }
     }
 
 
     /**
      * Returns a string representation of this point.
-     * This method is provide for debugging;
+     * This method is provided for debugging;
      * your program should not rely on the format of the string representation.
      *
      * @return a string representation of this point
@@ -143,7 +145,7 @@ public class Point implements Comparable<Point> {
     public static void main(String[] args) {
         /* YOUR CODE HERE */
         int n = StdIn.readInt(); // number of points
-        LinkedQueue<Point> points = new LinkedQueue<>();
+        Queue<Point> points = new Queue<>();
 
         while (!StdIn.isEmpty()) {
             int x = StdIn.readInt();
