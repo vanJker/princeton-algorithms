@@ -31,6 +31,15 @@ should be:
 java-algs4 Permutation 3 < distinct.txt
 ```
 
+### Project 3: Collinear    
+1. For Comparable's compareTo() and Comparator's compare(), if not all operators
+are integers, don't use subtraction and then cast to int (which will cause 
+small real number (positive or negative) to be zero).    
+2. In fast solution, build a copy of array since sort is inplace.     
+3. In fast solution, make use of stability of sort to avoid invalid segments.   
+4. In fast solution, if your number of collinear segments is less, consider 
+all points are collinear.     
+
 
 ## Schedule
 
