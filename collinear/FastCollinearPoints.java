@@ -12,7 +12,7 @@ import edu.princeton.cs.algs4.StdOut;
 import java.util.Arrays;
 
 public class FastCollinearPoints {
-    private Queue<LineSegment> segments; //  line segments
+    private final Queue<LineSegment> segments; //  line segments
 
     /** finds all line segments containing 4 or more points */
     public FastCollinearPoints(Point[] points) {
@@ -38,10 +38,13 @@ public class FastCollinearPoints {
 
         segments = new Queue<>();
         // Arrays.sort(points); // sort for rest sorts' stable (smaller points are smaller indices)
+        Point[] tmp = new Point[points.length]; // avoid mutate argument array
         Queue<Point> ps = new Queue<>(); // copy of sorted points (since other in-place sorts)
         for (int i = 0; i < points.length; i++) {
+            tmp[i] = points[i];
             ps.enqueue(points[i]);
         }
+        points = tmp;
 
         for (Point p: ps) {
             // StdOut.println("DEBUG: " + \n" + p);

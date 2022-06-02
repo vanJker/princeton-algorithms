@@ -107,15 +107,15 @@ public class Point implements Comparable<Point> {
      */
     public Comparator<Point> slopeOrder() {
         /* YOUR CODE HERE */
-        return new BySlope();
+        return new BySlope(x, y);
     }
 
 
     /** Can not use static there since invoking points are different. */
     private class BySlope implements Comparator<Point> {
-        private Point invoking; // invoking point
+        private final Point invoking; // invoking point
 
-        public BySlope() {
+        public BySlope(int x, int y) {
             invoking = new Point(x, y);
         }
 

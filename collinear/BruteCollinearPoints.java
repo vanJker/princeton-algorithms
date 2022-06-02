@@ -12,7 +12,7 @@ import edu.princeton.cs.algs4.StdOut;
 import java.util.Arrays;
 
 public class BruteCollinearPoints {
-    private Queue<LineSegment> segments; // line segments
+    private final Queue<LineSegment> segments; // line segments
 
     /** finds all line segments containing 4 points */
     public BruteCollinearPoints(Point[] points) {
@@ -37,6 +37,12 @@ public class BruteCollinearPoints {
         }
 
         segments = new Queue<>();
+        Point[] tmp = new Point[points.length]; // avoid mutate argument array
+        for (int i = 0; i < points.length; i++) {
+            tmp[i] = points[i];
+        }
+        points = tmp;
+
         Arrays.sort(points); // ensure segment p->s (p and s are the smallest and largest points)
         for (int i = 0; i < points.length; i++) {
             for (int j = i + 1; j < points.length; j++) {
