@@ -40,6 +40,9 @@ small real number (positive or negative) to be zero).
 4. In fast solution, if your number of collinear segments is less, consider 
 all points are collinear.     
 5. Donn't mutate argument array's content.   
+ 
+### Project 4: 8 Puzzle      
+Board.java: recommend use 2D array instead 1D array to implemnet.     
 
 
 ## Schedule
