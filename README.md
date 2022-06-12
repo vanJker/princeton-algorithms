@@ -48,6 +48,7 @@ all points are collinear.
 3. Skip blank (since it is not tile). Check that you skip blank in isGoal(),  hamming() and manhattan() methods.
 
 *Solver*:     
+You can use stack to store solution for correct move order.     
 
 
 ## Schedule
