@@ -1,3 +1,6 @@
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdOut;
+
 /******************************************************************************
  *  Compilation:  javac-algs4 PuzzleChecker.java
  *  Execution:    java-algs4 PuzzleChecker filename1.txt filename2.txt ...
@@ -25,7 +28,6 @@
  *
  ******************************************************************************/
 
-/*
 public class PuzzleChecker {
 
     public static void main(String[] args) {
@@ -50,4 +52,3 @@ public class PuzzleChecker {
         }
     }
 }
-*/

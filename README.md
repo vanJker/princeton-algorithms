@@ -39,10 +39,15 @@ small real number (positive or negative) to be zero).
 3. In fast solution, make use of stability of sort to avoid invalid segments.   
 4. In fast solution, if your number of collinear segments is less, consider 
 all points are collinear.     
-5. Donn't mutate argument array's content.   
+5. Don't mutate argument array's content.   
  
 ### Project 4: 8 Puzzle      
-Board.java: recommend use 2D array instead 1D array to implemnet.     
+*Board*:       
+1. Recommend use 2D array instead 1D array to implemnet.     
+2. twin() method must return same Board every time.     
+3. Skip blank (since it is not tile). Check that you skip blank in isGoal(),  hamming() and manhattan() methods.
+
+*Solver*:     
 
 
 ## Schedule

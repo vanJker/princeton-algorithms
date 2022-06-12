@@ -7,11 +7,10 @@
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.StdOut;
-import edu.princeton.cs.algs4.StdRandom;
 
 public class Board {
-    private int[][] tiles;  // tiles of puzzle
-    private int n;          // dimension of puzzle
+    private final int[][] tiles;  // tiles of puzzle
+    private final int n;          // dimension of puzzle
     private int blankRow;
     private int blankCol;   // index of blank
 
@@ -56,6 +55,9 @@ public class Board {
         int result = 0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
+                if (i == n-1 && j == n-1) { // blank is not a tile
+                    continue;
+                }
                 if (tiles[i][j] != goalTile(i, j)) {
                     result += 1;
                 }
@@ -74,6 +76,9 @@ public class Board {
         int result = 0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
+                if (tiles[i][j] == 0) { // blank is not a tile
+                    continue;
+                }
                 result += manDis(tiles[i][j], i, j);
             }
         }
@@ -101,6 +106,7 @@ public class Board {
     public boolean isGoal() {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
+                if (i == n-1 && j == n-1) continue; // skip blank
                 if (tiles[i][j] != goalTile(i, j)) {
                     return false;
                 }
@@ -173,25 +179,14 @@ public class Board {
         arr[r2][c2] = temp;
     }
 
-    /** a board that is obtained by exchanging any pair of tiles */
+    /** a board that is obtained by exchangeing any pair of tiles */
     public Board twin() {
-        // get valid tiles
-        int r1 = blankRow;
-        int c1 = blankCol;
-        while (r1 == blankRow && c1 == blankCol) {
-            r1 = StdRandom.uniform(n);
-            c1 = StdRandom.uniform(n);
-        }
-
-        int r2 = blankRow;
-        int c2 = blankCol;
-        while ((r2 == blankRow && c2 == blankCol) || (r2 == r1 && c2 == c1)) {
-            r2 = StdRandom.uniform(n);
-            c2 = StdRandom.uniform(n);
-        }
-
-        // exchange two tiles
+        // must return same twin board every time
         int[][] arr = copyArray(tiles);
+        int r1 = blankRow;
+        int c1 = (blankCol + 1) % n;
+        int r2 = (blankRow + 1) % n;
+        int c2 = blankCol;
         exchange(arr, r1, c1, r2, c2);
         return new Board(arr);
     }
@@ -212,6 +207,8 @@ public class Board {
 
         StdOut.println("puzzle: ");
         StdOut.println(board);
+        StdOut.println("hamming: " + board.hamming());
+        StdOut.println("manhattan: "+ board.manhattan());
         StdOut.println("neighbors: ");
         for (Board neighbor: board.neighbors()) {
             StdOut.println(neighbor);
