@@ -10,7 +10,7 @@
  *  in red; the nearest neighbor using the kd-tree algorithm is drawn in blue.
  *
  ******************************************************************************/
-
+/*
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.Point2D;
 import edu.princeton.cs.algs4.StdDraw;
@@ -61,3 +61,4 @@ public class NearestNeighborVisualizer {
         }
     }
 }
+*/

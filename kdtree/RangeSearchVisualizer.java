@@ -11,7 +11,7 @@
  *  in red; the results using the kd-tree algorithms are drawn in blue.
  *
  ******************************************************************************/
-
+/*
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.Point2D;
 import edu.princeton.cs.algs4.RectHV;
@@ -97,3 +97,4 @@ public class RangeSearchVisualizer {
         }
     }
 }
+*/
