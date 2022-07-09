@@ -6,7 +6,7 @@ Instructors: Robert Sedgewick, Kevin Wayne
 
 Textbook: [Algorithms, 4th][algs4]
 
-Websites: [Algorithms, part I][part1], [Algorithms, part II][part2]
+Coursera: [Algorithms, Part I][part1], [Algorithms, Part II][part2]
 
 ## Assignments
 
@@ -32,14 +32,16 @@ java-algs4 Permutation 3 < distinct.txt
 ```
 
 ### Project 3: Collinear    
+*General*:
 1. For Comparable's compareTo() and Comparator's compare(), if not all operators
 are integers, don't use subtraction and then cast to int (which will cause 
 small real number (positive or negative) to be zero).    
-2. In fast solution, build a copy of array since sort is inplace.     
-3. In fast solution, make use of stability of sort to avoid invalid segments.   
-4. In fast solution, if your number of collinear segments is less, consider 
-all points are collinear.     
-5. Don't mutate argument array's content.   
+2. Don't mutate argument array's content.   
+
+*FastCollinearPoints*:
+1. Build a copy of array (since sort is inplace) for correct interation.     
+2. Make use of stability of sort to avoid invalid segments.   
+3. If your number of collinear segments is less, consider all points are collinear.     
  
 ### Project 4: 8 Puzzle      
 *Board*:       
@@ -51,14 +53,16 @@ all points are collinear.
 1. Key problem is to implemnet a class about search node in game tree.  
 2. You can use stack to store solution for correct move order.     
 
+**Note**: If you want to understand A* algorithm, UC Berkeley's [cs188][cs188] is a good reference.
+
 
 ## Schedule
 
-Week 1-6 is from [part I][part1], rest week is from [part II][part2].   
+*Note*: week 1-6 are from [part I][part1], week 7-12 are from [part II][part2].   
 Interview Questions are optional, you should write it if you want a job.
 Every week has an assignment which requires all content of that week and previous weeks.   
 
-| Week | Lecture | Textbook | Interview Questions | Assignments |
+| Week | Lecture | Textbook | Practice Quiz | Programming Assignments |
 | :--: | :-----: | :------: | :-----------------: | :---------: |
 | 1 | Course Introduction      | 1.1, 1.2 |              | [Project 0: Hello, World][hello] |
 |   | Union-Find               | 1.5 | Union-Find        | [Project 1: Percolation][percolation] |
@@ -76,6 +80,7 @@ Every week has an assignment which requires all content of that week and previou
 
 
 [algs4]: https://algs4.cs.princeton.edu/   
+[cs188]: https://inst.eecs.berkeley.edu/~cs188/
 [part1]: https://www.coursera.org/learn/algorithms-part1   
 [part2]: https://www.coursera.org/learn/algorithms-part2   
 [hello]: https://coursera.cs.princeton.edu/algs4/assignments/hello/specification.php   
