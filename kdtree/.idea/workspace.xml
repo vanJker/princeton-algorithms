@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/PointSET.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KdTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KdTreeVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/KdTreeVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NearestNeighborVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/NearestNeighborVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointSET.java" beforeDir="false" afterPath="$PROJECT_DIR$/PointSET.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RangeSearchVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/RangeSearchVisualizer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +26,11 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
     <option name="SCHEME" value="Project" />
   </component>
   <component name="FindBugs-IDEA-Workspace">
@@ -30,6 +39,12 @@
   </component>
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
@@ -76,20 +91,45 @@
     <option name="showModules" value="false" />
     <option name="sortByType" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration name="PointSET" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PointSET" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.KdTree">
+    <configuration name="KdTree" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KdTree" />
       <module name="Algorithms, Part I" />
-      <option name="PROGRAM_PARAMETERS" value="circle10000.txt" />
+      <option name="PROGRAM_PARAMETERS" value="circle10.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KdTreeVisualizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KdTreeVisualizer" />
+      <module name="Algorithms, Part I" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PointSET" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PointSET" />
+      <module name="Algorithms, Part I" />
+      <option name="PROGRAM_PARAMETERS" value="circle10.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.KdTreeVisualizer" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="76a46fe8-dd2f-42b5-a613-ba4f0876a7af" name="Changes" comment="" />
       <created>1657360035404</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
