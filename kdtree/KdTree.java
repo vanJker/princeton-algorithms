@@ -53,6 +53,9 @@ public class KdTree {
 
     /** add the point to the set (if it is not already in the set). */
     public void insert(Point2D p) {
+        if (p == null) {
+            throw new IllegalArgumentException();
+        }
         root = insert(root, p, 0);
     }
 
@@ -60,6 +63,9 @@ public class KdTree {
     private Node insert(Node x, Point2D p, int level) {
         if (x == null) {
             return new Node(p);
+        }
+        else if (p.equals(x.point)) { // already in kd-tree
+            return x;
         }
 
         if (less(p, x.point, level)) {
@@ -74,6 +80,9 @@ public class KdTree {
 
     /** does the set contain point p? */
     public boolean contains(Point2D p) {
+        if (p == null) {
+            throw new IllegalArgumentException();
+        }
         return contains(root, p, 0);
     }
 
@@ -96,11 +105,11 @@ public class KdTree {
 
     /** draw all points to standard draw. */
     public void draw() {
-        draw(root, 0, 0, 1, 0, 1);
+        draw(root, 0, 0, 0, 1, 1);
     }
 
     /** draw kd-tree root at x (by recursion). */
-    private void draw(Node x, int level, double xmin, double xmax, double ymin, double ymax) {
+    private void draw(Node x, int level, double xmin, double ymin, double xmax, double ymax) {
         if (x == null) {
             return;
         }
@@ -116,20 +125,25 @@ public class KdTree {
         if (level % 2 == 0) { // even level (vertical splits)
             StdDraw.setPenColor(StdDraw.RED);
             StdDraw.line(p.x(), ymin, p.x(), ymax);
+            draw(x.left, level + 1, xmin, ymin, p.x(), ymax);
+            draw(x.right, level + 1, p.x(), ymin, xmax, ymax);
         }
         else { // odd level (horizontal split)
             StdDraw.setPenColor(StdDraw.BLUE);
             StdDraw.line(xmin, p.y(), xmax, p.y());
+            draw(x.left, level + 1, xmin, ymin, xmax, p.y());
+            draw(x.right, level + 1, xmin, p.y(), xmax, ymax);
         }
-        StdDraw.setPenRadius(0.01);
-        StdDraw.setPenColor(StdDraw.BLACK); // back to black
 
-        draw(x.left, level + 1);
-        draw(x.right, level + 1);
+        // draw(x.left, level + 1);
+        // draw(x.right, level + 1);
     }
 
     /** all points that are inside the rectangle (or on the boundary). */
     public Iterable<Point2D> range(RectHV rect) {
+        if (rect == null) {
+            throw new IllegalArgumentException();
+        }
         Queue<Point2D> queue = new Queue<>();
         range(root, rect, 0, queue);
         return queue;
@@ -159,34 +173,59 @@ public class KdTree {
 
     /** a nearest neighbor in the set to the point p; null if the set is empty. */
     public Point2D nearest(Point2D p) {
-        Point2D result = root.point;
-        nearest(root, p, 0, result);
+        if (p == null) {
+            throw new IllegalArgumentException();
+        }
+
+        if (isEmpty()) { // set is empty
+            return null;
+        }
+        Point2D result = nearest(root, p, 0, root.point);
         return result;
     }
 
     /** find a nearest neighbor in kd-tree root at x. */
-    private void nearest(Node x, Point2D p, int level, Point2D champion) {
+    private Point2D nearest(Node x, Point2D p, int level, Point2D champion) {
         if (x == null) {
-            return;
+            return champion;
         }
 
-        boolean update = false; // true if champion is updated
-        if (p.distanceTo(x.point) < p.distanceTo(champion)) {
+        // update champion point
+        if (p.distanceSquaredTo(x.point) < p.distanceSquaredTo(champion)) {
             champion = x.point;
-            update = true;
         }
 
+        Node b1, b2;    // b1 is at the same side of point p
         if (less(p, x.point, level)) {
-            nearest(x.left, p, level + 1, champion);
-            if (update) {
-                nearest(x.right, p, level + 1, champion);
-            }
+            b1 = x.left;
+            b2 = x.right;
         }
         else {
-            nearest(x.right, p, level + 1, champion);
-            if (update) {
-                nearest(x.left, p, level + 1, champion);
-            }
+            b1 = x.right;
+            b2 = x.left;
+        }
+
+        // vertical point
+        Point2D verticalPoint;
+        if (level % 2 == 0) { // even level
+            verticalPoint = new Point2D(x.point.x(), p.y());
+        }
+        else {
+            verticalPoint = new Point2D(p.x(), x.point.y());
+        }
+
+        // organize method
+        Point2D p1 = nearest(b1, p, level + 1, champion);
+        Point2D p2 = null;
+        if (p.distanceSquaredTo(champion) > p.distanceSquaredTo(verticalPoint)) {
+            p2 = nearest(b2, p, level + 1, champion);
+        }
+
+        if (p2 == null || p.distanceSquaredTo(p1) < p.distanceSquaredTo(p2)) {
+            return p1;
+        }
+        else {
+            return p2;
         }
     }
 
@@ -233,19 +272,23 @@ public class KdTree {
 
     /** unit testing of the methods (optional). */
     public static void main(String[] args) {
-        PointSET pointSet = new PointSET();
+        KdTree kdTree = new KdTree();
 
         In in = new In(args[0]);
         while (!in.isEmpty()) {
             double x = in.readDouble();
             double y = in.readDouble();
-            pointSet.insert(new Point2D(x, y));
+            kdTree.insert(new Point2D(x, y));
         }
 
         Point2D origin = new Point2D(0, 0);
-        StdOut.println("Is empty: " + pointSet.isEmpty());
-        StdOut.println("Number of points: " + pointSet.size());
-        StdOut.println("Contain origin point: " + pointSet.contains(origin));
-        pointSet.draw();
+        RectHV rect = new RectHV(0.5, 0, 1, 1);
+
+        StdOut.println("Is empty: " + kdTree.isEmpty());
+        StdOut.println("Number of points: " + kdTree.size());
+        StdOut.println("Contain origin point: " + kdTree.contains(origin));
+        StdOut.println("Right half of rectangle contains: " + kdTree.range(rect));
+        StdOut.println("Nearest point of origin point: " + kdTree.nearest(origin));
+        kdTree.draw();
     }
 }

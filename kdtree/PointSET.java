@@ -12,7 +12,7 @@ import edu.princeton.cs.algs4.SET;
 import edu.princeton.cs.algs4.StdOut;
 
 public class PointSET {
-    private SET<Point2D> set;  // set contain all points
+    private final SET<Point2D> set;  // set contain all points
 
     /** construct an empty set of points. */
     public PointSET() {
@@ -76,8 +76,8 @@ public class PointSET {
         double lowestDistance = Double.POSITIVE_INFINITY;
         Point2D result = null;
         for (Point2D q : set) {
-            if (p.distanceTo(q) < lowestDistance) {
-                lowestDistance = p.distanceTo(q);
+            if (p.distanceSquaredTo(q) < lowestDistance) {
+                lowestDistance = p.distanceSquaredTo(q);
                 result = q;
             }
         }
@@ -96,9 +96,13 @@ public class PointSET {
         }
 
         Point2D origin = new Point2D(0, 0);
+        RectHV rect = new RectHV(0.5, 0, 1, 1);
+
         StdOut.println("Is empty: " + pointSet.isEmpty());
         StdOut.println("Number of points: " + pointSet.size());
         StdOut.println("Contain origin point: " + pointSet.contains(origin));
+        StdOut.println("Right half of rectangle contains: " + pointSet.range(rect));
+        StdOut.println("Nearest point of origin point: " + pointSet.nearest(origin));
         pointSet.draw();
     }
 }
