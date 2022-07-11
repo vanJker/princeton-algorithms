@@ -8,6 +8,32 @@ Textbook: [Algorithms, 4th][algs4]
 
 Coursera: [Algorithms, Part I][part1], [Algorithms, Part II][part2]
 
+
+
+## Schedule
+
+*Note*: week 1-6 are from [part I][part1], week 7-12 are from [part II][part2].   
+Interview Questions are optional, you should write it if you want a job.
+Every week has an assignment which requires all content of that week and previous weeks.   
+
+| Week | Lecture | Textbook | Practice Quiz | Programming Assignments |
+| :--: | :-----: | :------: | :-----------------: | :---------: |
+| 1 | Course Introduction      | 1.1, 1.2 |              | [Project 0: Hello, World][hello] |
+|   | Union-Find               | 1.5 | Union-Find        | [Project 1: Percolation][percolation] |
+|   | Analysis of Algorithms   | 1.4 | Analysis of Algorithms |  |
+| 2 | Stacks and Queues        | 1.3 | Stacks and Queues | [Project 2: Queues][queues] |
+|   | Elementary Sorts         | 2.1 | Elementary Sorts  |  |
+| 3 | Mergesort                | 2.2 | Mergesort         | [Project 3: Collinear][collinear] |
+|   | Quicksort                | 2.3 | Quicksort         |  |
+| 4 | Priority Queues          | 2.4 | Priority Queues   | [Project 4: 8 Puzzle][8-puzzle] |
+|   | Elementary Symbol Tables | 3.1, 3.2 | Elementary Symbol Tables |  |
+| 5 | Balanced Search Trees    | 3.3 | Balanced Search Trees |  |
+|   | Geometric Applications of BSTs|  |                 | [Project 5: Kd-Trees][kdtree] |
+| 6 | Hash Tables              | 3.4 | Hash Tables       |  |
+|   |Symbol Table Applications |     |                   |  |
+
+
+
 ## Assignments
 
 ### Project 0: Hello, World    
@@ -55,28 +81,11 @@ small real number (positive or negative) to be zero).
 
 **Note**: If you want to understand A* algorithm, UC Berkeley's [cs188][cs188] is a good reference.
 
+### Project 5: Kd Trees    
+I only get 97 scores at this project since (my nearest() method).
+1. insert() and contains() are similar as implementation in BST (consider level).    
+2. nearest() only coniders area(s) which would contains closer point.
 
-## Schedule
-
-*Note*: week 1-6 are from [part I][part1], week 7-12 are from [part II][part2].   
-Interview Questions are optional, you should write it if you want a job.
-Every week has an assignment which requires all content of that week and previous weeks.   
-
-| Week | Lecture | Textbook | Practice Quiz | Programming Assignments |
-| :--: | :-----: | :------: | :-----------------: | :---------: |
-| 1 | Course Introduction      | 1.1, 1.2 |              | [Project 0: Hello, World][hello] |
-|   | Union-Find               | 1.5 | Union-Find        | [Project 1: Percolation][percolation] |
-|   | Analysis of Algorithms   | 1.4 | Analysis of Algorithms |  |
-| 2 | Stacks and Queues        | 1.3 | Stacks and Queues | [Project 2: Queues][queues] |
-|   | Elementary Sorts         | 2.1 | Elementary Sorts  |  |
-| 3 | Mergesort                | 2.2 | Mergesort         | [Project 3: Collinear][collinear] |
-|   | Quicksort                | 2.3 | Quicksort         |  |
-| 4 | Priority Queues          | 2.4 | Priority Queues   | [Project 4: 8 Puzzle][8-puzzle] |
-|   | Elementary Symbol Tables | 3.1, 3.2 | Elementary Symbol Tables |  |
-| 5 | Balanced Search Trees    | 3.3 | Balanced Search Trees |  |
-|   | Geometric Applications of BSTs|  |                 | [Project 5: Kd-Trees][kdtree] |
-| 6 | Hash Tables              | 3.4 | Hash Tables       |  |
-|   |Symbol Table Applications |     |                   |  |
 
 
 [algs4]: https://algs4.cs.princeton.edu/   
