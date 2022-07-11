@@ -13,6 +13,7 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class KdTree {
     private Node root;  // root of kd-tree
+    private Point2D champion;  // serve for nearest() method
 
     private static class Node { // node of kd-tree
         Point2D point;
@@ -180,18 +181,22 @@ public class KdTree {
         if (isEmpty()) { // set is empty
             return null;
         }
-        Point2D result = nearest(root, p, 0, root.point);
-        return result;
+        champion = null;
+        nearest(root, p, 0);
+        return champion;
     }
 
     /** find a nearest neighbor in kd-tree root at x. */
-    private Point2D nearest(Node x, Point2D p, int level, Point2D champion) {
+    private void nearest(Node x, Point2D p, int level) {
         if (x == null) {
-            return champion;
+            return;
         }
 
+        // TODO
+        StdOut.println(x.point);
+
         // update champion point
-        if (p.distanceSquaredTo(x.point) < p.distanceSquaredTo(champion)) {
+        if (champion == null || p.distanceSquaredTo(x.point) < p.distanceSquaredTo(champion)) {
             champion = x.point;
         }
 
@@ -205,27 +210,23 @@ public class KdTree {
             b2 = x.left;
         }
 
-        // vertical point
-        Point2D verticalPoint;
+        // distance square to split line (at vertical point)
+        double distanceSquaredToSplit;
         if (level % 2 == 0) { // even level
-            verticalPoint = new Point2D(x.point.x(), p.y());
+            // verticalPoint = new Point2D(x.point.x(), p.y());
+            double delta = (x.point.x() - p.x());
+            distanceSquaredToSplit = delta * delta;
         }
-        else {
-            verticalPoint = new Point2D(p.x(), x.point.y());
+        else { // odd level
+            // verticalPoint = new Point2D(p.x(), x.point.y());
+            double delta = (x.point.y() - p.y());
+            distanceSquaredToSplit = delta * delta;
         }
 
         // organize method
-        Point2D p1 = nearest(b1, p, level + 1, champion);
-        Point2D p2 = null;
-        if (p.distanceSquaredTo(champion) > p.distanceSquaredTo(verticalPoint)) {
-            p2 = nearest(b2, p, level + 1, champion);
-        }
-
-        if (p2 == null || p.distanceSquaredTo(p1) < p.distanceSquaredTo(p2)) {
-            return p1;
-        }
-        else {
-            return p2;
+        nearest(b1, p, level + 1);
+        if (p.distanceSquaredTo(champion) < distanceSquaredToSplit) {
+            nearest(b2, p, level + 1);
         }
     }
 
@@ -281,7 +282,7 @@ public class KdTree {
             kdTree.insert(new Point2D(x, y));
         }
 
-        Point2D origin = new Point2D(0, 0);
+        Point2D origin = new Point2D(0.49, 0.52);
         RectHV rect = new RectHV(0.5, 0, 1, 1);
 
         StdOut.println("Is empty: " + kdTree.isEmpty());
@@ -290,5 +291,9 @@ public class KdTree {
         StdOut.println("Right half of rectangle contains: " + kdTree.range(rect));
         StdOut.println("Nearest point of origin point: " + kdTree.nearest(origin));
         kdTree.draw();
+
+        // TODO
+        StdOut.println(origin.distanceSquaredTo(kdTree.root.point));
+        StdOut.println(origin.distanceSquaredTo(new Point2D(0.32, 0.708)));
     }
 }
