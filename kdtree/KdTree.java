@@ -181,22 +181,19 @@ public class KdTree {
         if (isEmpty()) { // set is empty
             return null;
         }
-        champion = null;
-        nearest(root, p, 0);
+        champion = root.point;
+        nearest(root, new RectHV(0, 0, 1, 1), p, 0);
         return champion;
     }
 
-    /** find a nearest neighbor in kd-tree root at x. */
-    private void nearest(Node x, Point2D p, int level) {
+    /** find a nearest neighbor in kd-tree root at x (rect correspond to x). */
+    private void nearest(Node x, RectHV rect, Point2D p, int level) {
         if (x == null) {
             return;
         }
 
-        // TODO
-        StdOut.println(x.point);
-
         // update champion point
-        if (champion == null || p.distanceSquaredTo(x.point) < p.distanceSquaredTo(champion)) {
+        if (p.distanceSquaredTo(x.point) < p.distanceSquaredTo(champion)) {
             champion = x.point;
         }
 
@@ -210,23 +207,11 @@ public class KdTree {
             b2 = x.left;
         }
 
-        // distance square to split line (at vertical point)
-        double distanceSquaredToSplit;
-        if (level % 2 == 0) { // even level
-            // verticalPoint = new Point2D(x.point.x(), p.y());
-            double delta = (x.point.x() - p.x());
-            distanceSquaredToSplit = delta * delta;
-        }
-        else { // odd level
-            // verticalPoint = new Point2D(p.x(), x.point.y());
-            double delta = (x.point.y() - p.y());
-            distanceSquaredToSplit = delta * delta;
-        }
-
         // organize method
-        nearest(b1, p, level + 1);
-        if (p.distanceSquaredTo(champion) < distanceSquaredToSplit) {
-            nearest(b2, p, level + 1);
+        nearest(b1, sameSideRect(x, rect, p, level), p, level + 1);
+        RectHV oppositeSideRect = oppositeSideRect(x, rect, p, level);
+        if (oppositeSideRect.distanceSquaredTo(p) < p.distanceSquaredTo(champion)) {
+            nearest(b2, oppositeSideRect, p, level + 1);
         }
     }
 
@@ -269,6 +254,42 @@ public class KdTree {
         else {                    // split rectangle
             return 0;
         }
+    }
+
+    /** return the sub-rectangle which is at same side of point p. */
+    private static RectHV sameSideRect(Node x, RectHV rect, Point2D p, int level) {
+        double xmin = rect.xmin();
+        double ymin = rect.ymin();
+        double xmax = rect.xmax();
+        double ymax = rect.ymax();
+
+        if (less(p, x.point, level)) {
+            if (level % 2 == 0) { xmax = x.point.x(); }
+            else                { ymax = x.point.y(); }
+        } else {
+            if (level % 2 == 0) { xmin = x.point.x(); }
+            else                { ymin = x.point.y(); }
+        }
+
+        return new RectHV(xmin, ymin, xmax, ymax);
+    }
+
+    /** return the sub-rectangle which is at opposite side of point p. */
+    private static RectHV oppositeSideRect(Node x, RectHV rect, Point2D p, int level) {
+        double xmin = rect.xmin();
+        double ymin = rect.ymin();
+        double xmax = rect.xmax();
+        double ymax = rect.ymax();
+
+        if (less(p, x.point, level)) {
+            if (level % 2 == 0) { xmin = x.point.x(); }
+            else                { ymin = x.point.y(); }
+        } else {
+            if (level % 2 == 0) { xmax = x.point.x(); }
+            else                { ymax = x.point.y(); }
+        }
+
+        return new RectHV(xmin, ymin, xmax, ymax);
     }
 
     /** unit testing of the methods (optional). */

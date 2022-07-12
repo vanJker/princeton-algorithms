@@ -84,7 +84,8 @@ small real number (positive or negative) to be zero).
 ### Project 5: Kd Trees    
 I only get 97 scores at this project since (my nearest() method).
 1. insert() and contains() are similar as implementation in BST (consider level).    
-2. nearest() only coniders area(s) which would contains closer point.
+2. nearest() only coniders rectangle(s) which would contains closer point (consider 
+using RectHW's distanceSquaredTo() (or distanceTo()) method). 
 
 
 
