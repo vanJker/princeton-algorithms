@@ -82,9 +82,10 @@ small real number (positive or negative) to be zero).
 **Note**: If you want to understand A* algorithm, UC Berkeley's [cs188][cs188] is a good reference.
 
 ### Project 5: Kd Trees    
-I only get 97 scores at this project since (my nearest() method).
+~~I only get 97 scores at this project since (my nearest() method).~~
 1. insert() and contains() are similar as implementation in BST (consider level).    
-2. nearest() only coniders rectangle(s) which would contains closer point (consider 
+2. range() just like iterate implementation.    
+3. nearest() only coniders rectangle(s) which would contains closer point (consider 
 using RectHW's distanceSquaredTo() (or distanceTo()) method). 
 
 
