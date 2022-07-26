@@ -1,4 +1,5 @@
-# Coursera: Princeton Algorithms 
+# Coursera: Princeton University
+## Algorithms 
 
 Self learning of Princeton University's Algorithms course in Coursera.
 
