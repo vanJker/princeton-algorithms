@@ -3,20 +3,22 @@
 
 Self learning of Princeton University's Algorithms course in Coursera.
 
-Instructors: Robert Sedgewick, Kevin Wayne
+Instructors: Robert Sedgewick, Kevin Wayne      
 
-Textbook: [Algorithms, 4th][algs4]
+Booksite: [Algorithms, 4th][algs4]     
 
-Coursera: [Algorithms, Part I][part1], [Algorithms, Part II][part2]
-
+Coursera: 
+- [Algorithms, Part I][part1]
+- [Algorithms, Part II][part2]    
 
 
 ## Schedule
 
-*Note*: week 1-6 are from [part I][part1], week 7-12 are from [part II][part2].   
+~~*Note*: week 1-6 are from [part I][part1], week 7-12 are from [part II][part2].~~   
 Interview Questions are optional, you should write it if you want a job.
 Every week has an assignment which requires all content of that week and previous weeks.   
 
+### Part I
 | Week | Lecture | Textbook | Practice Quiz | Programming Assignments |
 | :--: | :-----: | :------: | :-----------------: | :---------: |
 | 1 | Course Introduction      | 1.1, 1.2 |              | [Project 0: Hello, World][hello] |
@@ -33,6 +35,9 @@ Every week has an assignment which requires all content of that week and previou
 | 6 | Hash Tables              | 3.4 | Hash Tables       |  |
 |   |Symbol Table Applications |     |                   |  |
 
+### Part II
+| Week | Lecture | Textbook | Practice Quiz | Programming Assignments |
+| :--: | :-----: | :------: | :-----------: | :---------------------: |
 
 
 ## Assignments
