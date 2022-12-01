@@ -1,11 +1,11 @@
 # Coursera: Princeton University
 ## Algorithms 
 
-Self learning of Princeton University's Algorithms course in Coursera.
+Self learning of Princeton University's [Algorithms][algs4] course in Coursera.
 
 Instructors: Robert Sedgewick, Kevin Wayne      
 
-Booksite: [Algorithms, 4th][algs4]     
+Textbook: [Algorithms, 4th][algs4]     
 
 Coursera: 
 - [Algorithms, Part I][part1]
@@ -14,9 +14,8 @@ Coursera:
 
 ## Schedule
 
-~~*Note*: week 1-6 are from [part I][part1], week 7-12 are from [part II][part2].~~   
 Interview Questions are optional, you should write it if you want a job.
-Every week has an assignment which requires all content of that week and previous weeks.   
+Every week has an assignment which requires content of that week and previous weeks.   
 
 ### Part I
 | Week | Lecture | Textbook | Practice Quiz | Programming Assignments |
@@ -33,11 +32,42 @@ Every week has an assignment which requires all content of that week and previou
 | 5 | Balanced Search Trees    | 3.3 | Balanced Search Trees |  |
 |   | Geometric Applications of BSTs|  |                 | [Project 5: Kd-Trees][kdtree] |
 | 6 | Hash Tables              | 3.4 | Hash Tables       |  |
-|   |Symbol Table Applications |     |                   |  |
+|   | Symbol Table Applications |     |                   |  |
 
 ### Part II
 | Week | Lecture | Textbook | Practice Quiz | Programming Assignments |
 | :--: | :-----: | :------: | :-----------: | :---------------------: |
+| 1 | Course Introduction      | 1.1, 1.2 |              |  |
+|   | Undirected Graphs        | 4.1 | Undirected Graphs |  |
+|   | Directed Graphs          | 4.2 | Directed Graphs   | [Project 6: WordNet][wordnet] |
+| 2 |  |  |  |  |
+
+
+## Notes
+
+### 4.1 Undirected Graphs
+Q: Why each edge counted twice in count self-loops ?
+```Java
+public static int numberOfSelfLoops(Graph G)
+{
+    int count = 0;
+    for (int v = 0; v < G.V(); v++)
+        for (int w : G.adj(v))
+            if (v == w) count++;
+    return count/2;     // each edge counted twice
+}
+```
+
+A: This depends on the Graph API implementation. 
+Self-loops are inserted twice (since v == w).
+
+```Java
+public void addEdge(int v, int w)
+{
+    adj[v].add(w);
+    adj[w].add(v);
+}
+```
 
 
 ## Assignments
@@ -106,3 +136,4 @@ using RectHW's distanceSquaredTo() (or distanceTo()) method).
 [collinear]: https://coursera.cs.princeton.edu/algs4/assignments/collinear/specification.php   
 [8-puzzle]: https://coursera.cs.princeton.edu/algs4/assignments/8puzzle/specification.php
 [kdtree]: https://coursera.cs.princeton.edu/algs4/assignments/kdtree/specification.php
+[wordnet]: https://coursera.cs.princeton.edu/algs4/assignments/wordnet/specification.php
